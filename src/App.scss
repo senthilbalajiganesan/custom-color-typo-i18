@@ -1,0 +1,13 @@
+@import "styles/colors/themes.scss";
+@import "css-vars/css-vars";
+
+$css-vars-use-native: true;
+
+@include css-vars(
+  (
+    --primary: $primary,
+    --text-color: $text,
+    --button-color: $button,
+    --secondary: $secondary
+  )
+);

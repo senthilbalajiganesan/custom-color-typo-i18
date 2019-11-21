@@ -4,11 +4,11 @@ import "./Main.scss";
 
 export default (props: any) => {
   return (
-    <div className="center">
+    <div className="center color">
       <Card>
-        <h5>
+        <span className="desc-text">
           This text will have different color, fonts, sizes at different times
-        </h5>
+        </span>
         <Button />
       </Card>
     </div>
