@@ -2,7 +2,7 @@ export const themeOptions = [
   {
     "--primary": "#ffffff",
     "--text-color": "#000000",
-    "--button-color": "#412234",
+    "--button-color": "#4ECDC4",
     "--secondary": "#eeeeee",
     name: "light"
   },
