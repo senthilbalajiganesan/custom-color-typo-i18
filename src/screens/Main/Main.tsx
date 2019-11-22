@@ -28,7 +28,8 @@ export default (props: any) => {
         <DropDown
           list={[
             { name: "English", value: "en" },
-            { name: "Tamil", value: "tamil" }
+            { name: "Tamil", value: "tamil" },
+            { name: "English (us)", value: "en" }
           ]}
           onChange={(event: any) => i18n.changeLanguage(event.target.value)}
         />
