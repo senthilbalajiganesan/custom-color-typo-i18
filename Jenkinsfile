@@ -1,10 +1,9 @@
 pipeline {
    agent { dockerfile true }
     stages {
-        stage('Test') {
+        stage('Deploy') {
             steps {
-                sh 'node --version'
-                sh 'git --version'
+                sh 'docker run -d -p 88:80 462907c4774c'
             }
         }
     }
