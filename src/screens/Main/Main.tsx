@@ -29,7 +29,7 @@ export default (props: any) => {
           list={[
             { name: "English", value: "en" },
             { name: "Tamil", value: "tamil" },
-            { name: "English (GREEK)", value: "en" }
+            { name: "English (Latin)", value: "en" }
           ]}
           onChange={(event: any) => i18n.changeLanguage(event.target.value)}
         />
