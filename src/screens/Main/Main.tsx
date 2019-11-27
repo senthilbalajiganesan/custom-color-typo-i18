@@ -3,6 +3,7 @@ import { Card, Button, DropDown } from "components";
 import "./Main.scss";
 import { updateThemeForStyle } from "styles/colors/themeOptions";
 import { useTranslation } from "react-i18next";
+import SuperText from "components/SuperText/SuperText";
 
 export default (props: any) => {
   const { t, i18n } = useTranslation();
@@ -10,9 +11,27 @@ export default (props: any) => {
     <div className="center color">
       <Card>
         <span className="desc-text">
-          {t(
-            "This text will have different color, fonts, sizes at different times"
-          )}
+          <SuperText
+            fontFamily="primary"
+            span
+            size="h5"
+            weight="thin"
+            align="end"
+          >
+            {t(
+              "This text will have different color, fonts, sizes at different times"
+            )}
+          </SuperText>
+          <SuperText fontFamily="ternary" size="h6" weight="bolder" italic>
+            {t(
+              "This text will have different color, fonts, sizes at different times"
+            )}
+          </SuperText>
+          <SuperText fontFamily="secondary" size="h3" italic>
+            {t(
+              "This text will have different color, fonts, sizes at different times"
+            )}
+          </SuperText>
         </span>
         <Button />
       </Card>
